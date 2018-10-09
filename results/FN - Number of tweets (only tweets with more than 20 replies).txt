@@ -1,0 +1,16 @@
+Account id: 1266239359, Tweets: 0
+Account id: 17793358, Tweets: 0
+Account id: 1911303422, Tweets: 0
+Account id: 109065990, Tweets: 58
+Account id: 14075928, Tweets: 42
+Account id: 393693452, Tweets: 0
+Account id: 2302467404, Tweets: 0
+Account id: 73572581, Tweets: 0
+Account id: 2275780065, Tweets: 0
+Account id: 18380551, Tweets: 0
+Account id: 735574058167734273, Tweets: 0
+Account id: 2455959913, Tweets: 0
+Account id: 525815006, Tweets: 0
+Account id: 4730093353, Tweets: 0
+
+Sum of all tweets: 100

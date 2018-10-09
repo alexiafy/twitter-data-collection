@@ -1,0 +1,27 @@
+Account id: 5988062, Tweets: 33
+Account id: 23484039, Tweets: 0
+Account id: 32353291, Tweets: 0
+Account id: 2467791, Tweets: 14
+Account id: 1652541, Tweets: 49
+Account id: 742143, Tweets: 47
+Account id: 428333, Tweets: 25
+Account id: 16311797, Tweets: 0
+Account id: 15108702, Tweets: 0
+Account id: 49304503, Tweets: 0
+Account id: 14677919, Tweets: 31
+Account id: 2097571, Tweets: 41
+Account id: 144274618, Tweets: 0
+Account id: 335455570, Tweets: 2
+Account id: 32357365, Tweets: 0
+Account id: 5402612, Tweets: 23
+Account id: 14345062, Tweets: 0
+Account id: 104237736, Tweets: 0
+Account id: 51241574, Tweets: 25
+Account id: 759251, Tweets: 33
+Account id: 612473, Tweets: 46
+Account id: 1877831, Tweets: 6
+Account id: 34713362, Tweets: 22
+Account id: 3108351, Tweets: 35
+Account id: 807095, Tweets: 19
+
+Sum of all tweets: 451
