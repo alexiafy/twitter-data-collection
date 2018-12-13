@@ -15,4 +15,3 @@ api = tweepy.API(auth, wait_on_rate_limit=True,
 if not api:
     print("Can't Authenticate")
     sys.exit(-1)
-

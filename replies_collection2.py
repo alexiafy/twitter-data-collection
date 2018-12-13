@@ -1,5 +1,5 @@
 '''
-    Collect tweets - first attempt
+    Collect fake tweets - second attempt with more fake users
 '''
 
 from api import api
@@ -11,12 +11,14 @@ import datetime
 uri = "mongodb://localhost:27017/"
 client = pymongo.MongoClient(uri)
 db = client.fake_news                     #TODO Change the database
-
+collections = db.collection_names()
 
 def take_user_tweets():
     pages = 100   #TODO change to 100
     seven_days_ago = datetime.datetime.utcnow() - datetime.timedelta(days=7)
     for user in all_users:
+        if user[0] in collections:
+            continue
         db.create_collection(user[0])   # create database collection with the user id as name
         print(user[0])
         for page in range(1, pages):
@@ -49,6 +51,8 @@ def take_user_replies():
     seven_days_ago = datetime.datetime.utcnow() - datetime.timedelta(days=7)
     all_replies_sum = 0      # sum of all the replies collected
     for user in all_users:
+        if user[0] in collections:
+            continue
         user_replies_count = 0  # counts the replies of each user account
 
         max_tweets = 5000     # TODO change to 5000
@@ -113,7 +117,7 @@ def take_user_replies():
 
         all_replies_sum = all_replies_sum + user_replies_count
         # Write results to file
-        file = open("results/results_fake_news.txt", "a")
+        file = open("results/results_fake_news2.txt", "a")
         file.write(user[0])
         file.write(", ")
         file.write(user[2])
@@ -124,18 +128,17 @@ def take_user_replies():
         file.close()
 
     # Write results to file
-    file = open("results/results_fake_news.txt", "a")
+    file = open("results/results_fake_news2.txt", "a")
     file.write("Sum of all tweets: ")
     file.write(str(all_replies_sum))
     file.close()
 
-
 # read real news accounts from csv file
-with open('input/fake news accounts.csv', 'r', encoding="utf8") as csvFile:  #TODO Change the file name
+with open('input/fake news accounts2.csv', 'r', encoding="utf8") as csvFile:  #TODO Change the file name
     reader = csv.reader(csvFile, delimiter=',')
     all_users = list(reader)    # convert csv reader object to list
 
-    file = open("results/results_fake_news.txt", "w")
+    file = open("results/results_fake_news2.txt", "w")
     file.close()
 
     take_user_tweets()
